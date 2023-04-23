@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sah</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function showFullScreen(_src) {
+      console.log(_src);
+      var overlay = document.getElementById("fullscreen-overlay");
+      var imageId = document.getElementById("showImage")
+      imageId.src = _src
+      overlay.style.display = "flex";
+    }
+
+    function closeFullScreen(){
+      var overlay = document.getElementById("fullscreen-overlay");
+      overlay.style.display = "none";
+    }
+
+
+  </script>
+</head>
+<body>
+
+<div class="jumbotron" style="background-image: url(images/E2047-53-scaled.jpg);background-size: cover; ">
+  <p class="text-center" style="color: white; font-size: 60px;">
+    Šah
+  </p>
+</div>
+  
+<div onclick="closeFullScreen()" id="fullscreen-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; display: none; z-index: 999;
+justify-content: center;
+align-items: center;">
+  <img src="" id="showImage" style="max-width: 100%; max-height: 100%; margin: auto; display: flex;" onclick="closeFullScreen()">
+</div>
+
+
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2" id="sideinfo">
+      
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Općenito</h1>
+      <p>
+        Šah je igra koja se igra na ploči s 64 kvadrata raspoređenih u osam redova i osam kolona. 
+        Svaki igrač ima 16 figura koje koristi za napad i obranu: kralja, kraljicu, dva lovca, dva konja, dva topa i osam pješaka. 
+        Cilj igre je uhvatiti protivnikovog kralja, pri čemu se igrači izmjenjuju u potezima.
+        Potezi se izvode naizmjence, a igrači se obično dogovore tko će igrati bijelim figurama, a tko crnim figurama. 
+        Bijeli igrač obično započinje igru pomjeranjem jednog od svojih pješaka za dva polja prema naprijed. 
+        Potom crni igrač izvodi svoj potez, nakon čega igrači izmjenjuju poteze sve do kraja igre.
+        Šah je igra koja zahtijeva veliku količinu razmišljanja i strategije. 
+        Igrači moraju predvidjeti poteze protivnika i planirati svoje poteze u skladu s tim. 
+        Šah se često igra kao natjecateljski sport, a postoji i međunarodna organizacija koja regulira pravila igre i organizira turnire.
+        Šah nije samo zabavna igra, već ima i mnoge prednosti za mozak. 
+        Igranje šaha poboljšava kognitivne sposobnosti poput koncentracije, memorije, analitičkog razmišljanja i planiranja. 
+        Zbog toga se šah često preporučuje kao igra za djecu i odrasle.
+      </p>
+      <img   src="images/Chess_board_opening_staunton.jpg"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+      <br>
+      <hr>
+      <h1>Pravila</h1>
+      <p>
+        Svaka figura ima određeni način kretanja. 
+        Pješak se kreće samo unaprijed, osim u prvom potezu kada može krenuti za dva polja. 
+        Kralj se kreće u bilo kojem smjeru za jedno polje, dok se kraljica može kretati u bilo kojem smjeru i bilo koliko polja. 
+        Top se kreće samo po linijama na kojima stoji, dok se lovac kreće po dijagonalama. 
+        Konj se kreće u slovu L, tj. dva polja u jednom smjeru, a zatim jedno polje u smjeru koji je okomito na prethodni smjer.
+        Cilj igre je uhvatiti protivnikovog kralja. 
+        Kada se kralj nađe pod napadom, igrač mora izvršiti potez kojim će kralja zaštititi ili izvesti potez kojim će kralja odvesti na sigurno mjesto. 
+        Ako igrač ne može napraviti nijedan legalan potez koji bi zaštitio njegovog kralja, igra se završava i igrač koji je napao kralja pobjeđuje.
+      </p>
+      <img   src="images/chess-4264325_1280.bmp"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+
+      <br>
+     
+      
+    </div>
+    <div class="col-sm-2 " id="sideinfo">
+      
+    </div>
+  </div>
+</div>
+<hr>
+</body>
+<footer>
+    <div class="container-fluid text-center" style="background-color: gainsboro;">
+      <p style="margin-top: 25px;margin-bottom: 25px;">
+        Web stranica je izrađena za vrijeme pohađanja 
+        Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija 
+        Multimedijska tehnika i poveznice na web stranicu fakulteta te na kolegij Multimedijska 
+        tehnika
+      </p>
+    </div>
+</footer>
+</html>

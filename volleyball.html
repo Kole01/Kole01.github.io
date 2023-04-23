@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Odbojka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function showFullScreen(_src) {
+      console.log(_src);
+      var overlay = document.getElementById("fullscreen-overlay");
+      var imageId = document.getElementById("showImage")
+      imageId.src = _src
+      overlay.style.display = "flex";
+    }
+
+    function closeFullScreen(){
+      var overlay = document.getElementById("fullscreen-overlay");
+      overlay.style.display = "none";
+    }
+
+
+  </script>
+</head>
+<body>
+
+<div class="jumbotron" style="background-image: url(images/volley.png);background-size: cover; ">
+  <p class="text-center" style="color: white; font-size: 60px;">
+    Odbojka
+  </p>
+</div>
+  
+<div onclick="closeFullScreen()" id="fullscreen-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; display: none; z-index: 999;
+justify-content: center;
+align-items: center;">
+  <img src="" id="showImage" style="max-width: 100%; max-height: 100%; margin: auto; display: flex;" onclick="closeFullScreen()">
+</div>
+
+
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2" id="sideinfo">
+      
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Općenito</h1>
+      <p>
+        Odbojka je sport s loptom u kojem se dvije suparničke momčadi natječu na terenu s razapetom mrežom na sredini.
+        Cilj igre je prebaciti loptu preko mreže u protivničko polje na način da je protivnik ne uspije održati u zraku i vratiti natrag preko mreže na dozvoljen način prije nego što padne na teren.
+
+        Odbojka je sport koji obiluje brzinom i svestranim pokretima tijela pa se od igrača očekuju brze reakcije, sabranost i trenutna snalažljivost.
+        Glavna obilježja današnjih nacionalnih selekcija su snaga i visina. Osobito je važno da igrači budu dobro zagrijani i dobro istrenirani.
+        <br>
+        <br>
+        <img src="images/volley3.bmp"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)">
+        <br>
+
+        <a href = "https://hr.wikipedia.org/wiki/William_G._Morgan" >William G. Morgan</a> (1870. – 1942.), rođen u državi New York ostao je zapisan u povijesti kao stvoritelj odbojke, koju je originalno nazvao "Mintonette".
+        Morgan je diplomirao na Springfield College-u gdje je upoznao <a href = "https://en.wikipedia.org/wiki/James_Naismith">James Naismith-a</a>, koji je 1891. godine izmislio košarku.
+        Godinu dana nakon što je diplomirao, Morgan odlazi na Holyoke (Massachusetts), gdje dobiva mjesto direktora tjelesnog odgoja.
+
+        Početkom 1896. godine u Springfieldu na YMCA College-u organizirana je konferencija gdje su se okupili svi direktori tjelesnog odgoja YMCA-a.
+        Na toj konferenciji je Morgan prvi puta demonstrirao novo stvorenu igru. Složio je dvije ekipe od po pet igrača koji su prije same konferencije odigrali "Mintonette".
+
+      </p>
+      <img   src="images/volley2.png"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+      <br>
+      <hr>
+      <h1>Pravila</h1>
+      <p>
+        Godine 2000. donesena su nova pravila bodovanja u odbojci. Prema novim pravilima bodovi se osvajaju poslije svake završene akcije, bez obzira na to koja ekipa je servirala. Prema prijašnjim pravilima samo ona ekipa koja je servirala je mogla osvojiti bod.
+        Utakmice se igraju na tri dobivena seta od po 25 poena, a najviše se može odigrati pet setova. Za razliku od prva četiri seta, peti (koji se još zove i tie-break) se igra do 15 bodova.
+        U slučaju izjednačenog rezultata krajem seta, pobjedniku su potrebna dva poena razlike da bi završio susret u svoju korist.
+
+        <br>
+        <img   src="images/volleyballnet.jpg"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+        <br>
+
+        Tijekom igre svih šest igrača se u polju rotiraju u smjeru kazaljke na satu, nakon osvojenog servisa. 
+        To je glavni ključ dvoranske odbojke - ne može se cijelo vrijeme igrati s najboljim napadačima na mreži ili najboljim obrambenim igračima u pozadini. 
+        Prije servisa igrači moraju biti na mjestima koje im redom pripada, a nakon servisa mogu zamijeniti mjesta, ali igrači iz obrane ne smiju mijenjati igrače na mreži. 
+        Oni također smiju sudjelovati u napadu, ali mogu smečirati samo iza napadačke linije (linije tri metra). Pravilo rotiranja objašnjava zašto tehničar ponekad izgleda kao da se "skriva" iza igrača. Prije servisa, kao i ostali, i on mora biti na svom mjestu, a nakon servisa može trčati na mrežu kako bi organizirao napad. 
+        Ako dotrči na mrežu prije nego što je protivnik odservirao, bod se daje protivniku.
+      </p>
+      <div class="auto-resizable-iframe">
+        <div>
+          <iframe width="100%" 
+          src="https://www.youtube.com/embed/Lq3YD8gSCHk?autoplay=1&mute=1">
+          </iframe>
+        </div>
+      </div>
+
+      <br>
+     
+      
+    </div>
+    <div class="col-sm-2 " id="sideinfo">
+      
+    </div>
+  </div>
+</div>
+<hr>
+</body>
+<footer>
+    <div class="container-fluid text-center" style="background-color: gainsboro;">
+      <p style="margin-top: 25px;margin-bottom: 25px;">
+        Web stranica je izrađena za vrijeme pohađanja 
+        Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija 
+        Multimedijska tehnika i poveznice na web stranicu fakulteta te na kolegij Multimedijska 
+        tehnika
+      </p>
+    </div>
+</footer>
+</html>

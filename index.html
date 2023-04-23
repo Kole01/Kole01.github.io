@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nogomet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function showFullScreen(_src) {
+      console.log(_src);
+      var overlay = document.getElementById("fullscreen-overlay");
+      var imageId = document.getElementById("showImage")
+      imageId.src = _src
+      overlay.style.display = "flex";
+    }
+
+    function closeFullScreen(){
+      var overlay = document.getElementById("fullscreen-overlay");
+      overlay.style.display = "none";
+    }
+
+    function showMoreInfo(_id){
+      var moreInfo = document.getElementById(_id);
+      if(moreInfo.style.display == "none"){
+        moreInfo.style.display="block";
+      }
+      else{
+        moreInfo.style.display="none";
+      }
+      
+      
+    }
+    function showFullScreenVideo() {
+      var overlay = document.getElementById("fullscreen-overlay-video");
+      overlay.style.display = "flex";
+    }
+    function closeFullScreenVideo() {
+      var overlay = document.getElementById("fullscreen-overlay-video");
+      overlay.style.display = "none";
+    }
+  </script>
+</head>
+<body>
+
+<div class="jumbotron" style="background-image: url(images/staduim_backgound.jpg);background-size: cover; ">
+  <p class="text-center" style="color: white; font-size: 60px;">
+    Nogomet
+  </p>
+</div>
+  
+<div onclick="closeFullScreen()" id="fullscreen-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; display: none; z-index: 999;
+justify-content: center;
+align-items: center;">
+  <img src="" id="showImage" style="max-width: 100%; max-height: 100%; margin: auto; display: flex;" onclick="closeFullScreen()">
+</div>
+
+<div onclick="closeFullScreenVideo()" id="fullscreen-overlay-video" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; display: none; z-index: 999;justify-content: center;align-items: center;">
+  <video controls>
+    <source src="images/freekick.mp4" type="video/mp4" id="showVideo">
+  </video>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2" id="sideinfo">
+      <div>
+        <img src="images/rsz_1316446283_1326304958139441_6673396997580374543_n.jpg" style="height:70%;width: 70%;margin-left: auto;margin-right: auto;display: block;" onclick="showFullScreen(this.src)">
+        <br>
+        <p onclick="showMoreInfo('mihaelInfo')">Mihael Kolembus</p>
+        <div id="mihaelInfo" style="display: none;">
+          <p>
+            Datum Rođenja: 07.05.2000.
+          </p>
+          <p>
+            Osnovna škola: <a href="http://os-vnazora-novabukovica.skole.hr/">Osnovna škola Vladimira Nazora Nova Bukovica</a>
+          </p>
+          <p>
+            Srednja škola: <a href="https://tehnickaskola.net/">Tehnička škola Požega</a>
+          </p>
+          <p>
+            Fakultet: <a href="https://www.ferit.unios.hr/">Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek</a>
+          </p>
+          <p>
+            <a onclick="showFullScreenVideo()">Bavim li se i ja ovim sportom ili ga samo volim?</a>
+          </p>
+          <p>
+            Drugi izbor: <a href="chess.html">Šah</a>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Općenito</h1>
+    
+      <p>Nogometom se na bilo koji način bavi preko 250 milijuna muškaraca i žena, dok registriranih aktivnih igrač(ic)a ima oko 40 milijuna. 
+        Krovna nogometna organizacija, FIFA, okuplja 209 punopravnih nacionalnih saveza raspoređenih u šest konfederacija. 
+        To je sport u kojem se dvije momčadi, momčad se sastoji od 11 igrača, natječu koja će postići vise pogodaka. 
+        Sport se odvija na terenu pravokutnog oblika. 
+        Teren je podijeljen je na dvije polovice te na svakoj polovici se nalazi prostor vratara, prostor u kojem vratar pokušava spriječiti protivniku momčad od postizanja pogotka.
+        Lopta koju igrači pokušavaju dovesti do protivničkog gola se može igrati svakim dijelom tijela osim rukom,
+        loptu rukom smije dirati samo vratar u svojem označenom prostoru. 
+      </p>
+      <br>
+      <div class="auto-resizable-iframe">
+        <div>
+          <iframe width="100%" 
+          src="https://www.youtube.com/embed/BYp2RriTqGc?autoplay=1&mute=1">
+          </iframe>
+        </div>
+      </div>
+      
+      <hr>
+      <h1>Povijest
+      </h1>
+      <p>Prve igre loptom zabilježene su prije nove ere, cuju u drevnoj Kini, Harpastum u Rimskoj Republici te Fajninda u Staroj Grčkoj, no prvi zapis koji biljezi odražavanje sport sličnog nogometu se dogodilo 1602.g. u Cornwallu. 
+        Teren je bio dugačak 200-tinjak metara te su se za dodavanje i ostalo mogle koristiti ruke.</p>
+        <br>
+        <img src="images/calcio.bmp"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)">
+        <br>
+      <p>Prvo službeno tijelo osnovano je 1863. godine u Engleskoj zbog razdvajanja nogometa od ragbija. 
+        Prvim pravilnikom, donesenim iste godine, uklonjene su osnovne tehnike grubljih inačica sportova „napucavanja lopte”, poznatih pod zbirnom imenicom football, poput saplitanja protivnika te igre rukom.  
+        Prvu nogometnu utakmicu, pod službenim pravilima Saveza, odigrali su Barnes F.C. i Richmond F.C. 19. prosinca 1863. godine. 
+        Momčadi su se sastojale od petnaestorice igrača no pogodaka nije bilo nakon devedeset minuta igre. 
+        Broj igrača konačno je smanjen s ragbijaških petnaest na nogometnih jedanaest nepune tri godine poslije. 
+        1886. osnovan je IFAB, međunarodno tijelo za održavanje i razvoj pravila nogometne igre, čije su odluke konačne i obvezujuće svim FIFA-inim članicama.
+      </p>
+      <hr>
+      <h1>Pravila</h1>
+      <p>Sva pravila su zapisana u <a href="https://hns-cff.hr/files/documents/21824/PNI%202021-2022.pdf">IFAB službenom pravilniku</a>, zapisano je 17 pravila, njima je zapisan svaki detalj o igri, od opreme igrača do veličine i težine lopte koja se može koristiti.  </p>
+      <p>Dužina igrališta za međunarodne utakmice trebala bi biti između 100 i 110 metara, a širina bi trebala biti u okviru 65 i 75 metara. 
+        Za ostale utakmice mjere više variraju: dužina između 90 i 120 metara, a širina 45 do 90 metara. 
+        Dužina igrališta mora biti veća nego njegova širina.
+        Prečka je duga 7.32 metara i spaja dvije stative visoke 2.44 metra. 
+        Iako ih nogometna pravila ne zahtijevaju, za okvir gola je postavljena mreža koja daje sigurnost da li je lopta u golu ili ne.
+        Peterac se sastoji od gol-linije, dvije linije koje pod pravim kutom ulaze u teren 5.5m , te od linije koja spaja već prije spomenute dvije linije.
+        Kazneni prostor (još nazvan i šesnaesterac) formiraju gol-linija, dvije linije koje pod pravim kutom ulaze u teren 16.5 metara, te linije koja spaja već spomenute dvije linije. 
+        Ovaj dio terena ima mnoštvo funkcija, dok je jedna od najvažnijih da je to mjesto u kojemu vratar može koristiti svoje ruke.
+        Kaznena oznaka, ili kolokvijalno, bijela točka, mjesto je s kojega se izvode jedanaesterci. Od gola je udaljena točno 11 metara po sredini.
+        <br>
+        <img   src="images/1280px-Football_pitch_metric.png" id="field"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)">
+        <br>
+      </p>
+      <p>
+        Vrijeme trajanja nogometne utakmice različito je po uzrastu, kao i eventualni produžetci.
+        Vrijeme trajanja utakmice seniorima i juniorima je 2×45 minuta, dok su produžetci 2×15 minuta. 
+        Kadeti igraju 2×40 minuta, a eventualni produžetci su 2×10 minuta. Pionirima utakmica traje 2×35 minuta, te su im eventualni produžetci su 2×5 minuta, dok mlađi pioniri igraju 2×30 minuta, s istim vremenom trajanja produžetaka kao i kod pionira.
+      </p>
+      <p>
+        Prekršaj (ili faul) u nogometnoj igri je nesportski čin jednoga igrača prema protivničkom igraču. Dosuđivanje prekršaja događa se kada igrači ometaju tijek igre, udaranje, saplitanje i slično. U slučaju prekršaja u šesnaestercu dosuđuje se jedanaesterac.
+      </p>
+      <br>
+      <div style="width: 50%; float: left;">
+        <img src="images/cavani-freekick.gif"  style=" margin-left: auto;margin-right: auto;display: block;" onclick="showFullScreen(this.src)">
+      </div>
+      <div style="width: 50%;float: left;">
+        <img src="images/penalty.jpg" style="height: 336px; width: 90%; margin-left: auto;margin-right: auto;display: block;" onclick="showFullScreen(this.src)">
+      </div>
+      
+    </div>
+    <div class="col-sm-2 " id="sideinfo">
+      <div>
+        <img src="images/ng.jpg" style="height:70%;width: 70%;margin-left: auto;margin-right: auto;display: block;" onclick="showFullScreen(this.src)">
+        <br>
+        <p onclick="showMoreInfo('nikolaInfo')">Nikola Golubović</p>
+        <div id="nikolaInfo" style="display: none;">
+          <p>
+            Datum Rođenja: 19.02.2002
+          </p>
+          <p>
+            Osnovna škola: <a href="http://os-amihanovica-os.skole.hr">Osnovna Škola Antuna Mihanovića Osijek</a>
+          </p>
+          <p>
+            Srednja škola: <a href="http://ss-tehnicka-rboskovica-os.skole.hr">Prirodoslovna Gimnazija Ruđera Boškovića Osijek</a>
+          </p>
+          <p>
+            Fakultet: <a href="https://www.ferit.unios.hr/">Fakultet elektrotehnike, racunarstva i informacijskih tehnologija Osijek</a>
+          </p>
+          <p><a href = "#" onClick="playAudio()">Bavim li se i ja ovim sportom ili ga samo volim?</a></p>
+          <audio id ="ng-audio">
+            <source src = "images/ng.mp3" type ="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <script>
+            function playAudio() {
+              var audio = document.getElementById("ng-audio");
+              audio.play();
+          }
+          </script>
+          <p>
+            Drugi izbor: <a href="volleyball.html">Odbojka</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</body>
+<footer>
+  <div class="container-fluid text-center" style="background-color: gainsboro;">
+    <p style="margin-top: 25px;margin-bottom: 25px;">
+      Web stranica je izrađena za vrijeme pohađanja 
+      Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija 
+      Multimedijska tehnika i poveznice na web stranicu fakulteta te na kolegij Multimedijska 
+      tehnika
+    </p>
+  </div>
+</footer>
+</html>
