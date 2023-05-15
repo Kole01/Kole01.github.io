@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hokej</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function showFullScreen(_src) {
+      console.log(_src);
+      var overlay = document.getElementById("fullscreen-overlay");
+      var imageId = document.getElementById("showImage")
+      imageId.src = _src
+      overlay.style.display = "flex";
+    }
+
+    function closeFullScreen(){
+      var overlay = document.getElementById("fullscreen-overlay");
+      overlay.style.display = "none";
+    }
+
+
+  </script>
+</head>
+<body>
+
+<div class="jumbotron" style="background-image: url(images/hockey.jpg);background-size: cover; ">
+  <p class="text-center" style="color: white; font-size: 60px;">
+    Hokej
+  </p>
+</div>
+  
+<div onclick="closeFullScreen()" id="fullscreen-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; display: none; z-index: 999;
+justify-content: center;
+align-items: center;">
+  <img src="" id="showImage" style="max-width: 100%; max-height: 100%; margin: auto; display: flex;" onclick="closeFullScreen()">
+</div>
+
+
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2" id="sideinfo">
+      
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Općenito</h1>
+      <p>
+        Hokej na ledu jedan je od najdinamičnijih zimskih sportova. Hokej je timski sport koji se igra na umjetnim ili prirodnim ledenim površinama, a najpopularniji je u zemljama s dugim, 
+        hladnim zimama. Iznimno je popularan u Češkoj, Finskoj, Kanadi, Rusiji, Slovačkoj, Švedskoj i Sjedinjenim Američkim Državama. Krovna organizacija hokeja na ledu <a href = "https://www.iihf.com/en/events/2023/wm">
+        IIHF</a> 
+        (International Ice Hockey Federation) ima 64 članice, a lige spomenutih zemalja smatraju se najjačima. Na Zimskim je Olimpijskim igrama hokej prisutan od 1924. godine.
+        <br>
+        <br>
+        <img src="images/hokej1912.jpg"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)">
+        <br>
+
+        Igre u kojima se zakrivljenom palicom udara predmet raznih oblika poznate su odavno. 
+        Naziv 'hokej' koristi se od 16.st., a porijeklo riječi nije razjašnjeno; možda potječe od starofrancuske riječi hoquet koja je označavala pastirski štap, a možda i od staronizozemske 
+        riječi hokkie (umanjenica od hok; pseća kućica ili koliba) korištene za označavanje gola). Mnoge su se takve igre igrale na travi, a gdje se to moglo i na ledu, na smrznutim jezerima, 
+        rijekama ili kanalima.
+        U Europi se razvilo više igara srodnih hokeju, poput škotske igre shinty ili shinney i irske hurling, a iseljenici su ih prenijeli na sjevernoamerički kontinent gdje je prilagođen 
+        zimskim uvjetima. Tako su engleski i francuski doseljenici u Kanadi igrali hokej na zamrznutim rijekama i jezerima kližući na cipelama na koje su pričvrstili oštrice noževa za rezanje 
+        sira, pa postoji i teorija da je hokej na ledu izumljen u gradu Windsoru u kanadskoj provinciji Nova Scotia.
+      </p>
+      <img   src="images/hockeycut.jpg"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+      <br>
+      <br>
+      <p>
+        Canadian Amateur Hockey Association 1943. je Kingston proglasila rodnim gradom hokeja na ledu, jer tamo je 1886. između studenata Queen's University i Royal Military College of 
+        Canada održana igra za koju se mislilo da je prva zabilježena, što se nakon daljnjeg istraživanja pokazalo kao netočno. Po današnjim podacima udruženja Society for International 
+        Hockey Research najstarija je igra održana u Halifaxu 1859., zabilježena u članku u Boston Evening Gazette iz iste godine.
+      </p>
+      <hr>
+      <h1>Pravila I Prekršaji</h1>
+      <p>
+        Hokej na ledu igra se na igralištu propisanih dimenzija, a igraju dvije momčadi s pet igrača i jednim vratarom na klizaljkama. Cilj je igre pogoditi u protivnički gol pločicom 
+        (također zvana puckom ili pakom) od tvrde vulkanizirane gume. Igrači pločicom upravljaju dugačkom palicom koja je na donjem kraju zakrivljena i plosnatija, a dopušteno im je pločicom 
+        upravljati i bilo kojim dijelom tijela, ovisno o pravilima. Uobičajena postava momčadi uključuje vratara, kojem je zadaća spriječiti da pločica uđe u gol, te pet igrača od kojih tri 
+        igraju u napadu, a dva u obrani. Napad ima centra, lijevo krilo i desno krilo. Igrači se mogu izmijeniti u svakom dijelu igre i bez zaustavljanja igre, a zamjena se može obaviti 
+        pojedinačno ili se može zamijeniti cijela postava.
+        Ograda sprječava da pločica izleti izvan igrališta, pa se igra često odvija u dužim periodima bez prekida. Kretanje pločice određeno je pravilima zaleđa (offside) i zabranjenog 
+        ispucavanja (icing).
+        Svaka liga ima svoja pravila o broju igrača u selekciji, koji se kreće od 18 do 23, od čega su dva igrača vratari. Hokej na ledu igra se po više različitih tipova pravila, 
+        a najvažnija su pravila IIHF-a i NHL-a.
+
+        <br>
+        <img   src="images/hokej.png"  style="display: block;width: 50%;height: 50%;margin-left: auto;margin-right: auto;" onclick="showFullScreen(this.src)"
+        <br>
+
+        U hokejskoj utakmici sude od dva do četiri suca, dva linijska suca koji su zaduženi za prekršaje zaleđa i zabranjenog ispucavanja, te glavni sudac (ponekad i dva) zadužene za ostale 
+        prekršaje.
+        U muškom hokeju, za razliku od ženskog, igraču je dozvoljeno udariti bokom ili ramenom koji u tom trenu ima pločicu ili ju je imao neposredno prije. Taj se manevar naziva napad tijelom 
+        (body checking). Svaki tip fizičkog kontakta u hokeju nije dozvoljen, primjerice najstrože je zabranjen napad palicom, te postoji niz manevara koji se smatraju prekršajima i za njih se dosuđuju kazne.
+        Najčešći je oblik kažnjavanja igrača za prekršaj isključivanje iz igre na određeno vrijeme, tijekom kojeg je obavezan sjediti na klupi za prekršaje, a njegova ga momčad nema pravo 
+        zamijeniti. Druga momčad u tom slučaju igra s igračem više, odnosno ostvaruje power play. Kazna od dvije minute može se dosuditi za manje prekršaje poput spoticanja (tripping), udarca 
+        laktom (elbowing), udaranje šakom ili grubost (roughing), visoku palicu (high-sticking), previše igrača na ledu (too many players on the ice), korištenje nedozvoljene opreme 
+        (illegal equipment), nedozvoljeni napad tijelom (charging), držanje (holding), ometanje (interference), zadržavanje igre (delay of game), povlačenje palicom (hooking) ili nalet palicom 
+        (cross-checking).
+      </p>
+      <h1>"The Code"</h1>
+      <p>
+        Hokej na ledu je jedini sport koji tolerira fizički sukob tijekom igre, iako postoje pravila koja ga zabranjuju. Suci su zaduženi za prekršaje tijekom igre, ali ponekad igrači preuzimaju
+        stvari u svoje ruke. Postoje nepropisana pravila koja diktiraju kako se igrači trebaju ponašati u ovom slučaju, također postoje i specifični igrači u svakoj momčadi zaduženi za kontroliranje
+        ovakvih sukoba i branjenje pravila igre. Ovi igrači se nazivaju izvršiteljima / policajcima (Enforcers/Cops/Policemen).
+        <br>
+        Ova nepropisana pravila su zasnovana na međusobnom poštovanju između igrača, čuvanjem vlastite momčadi ili poštivanje protivničke.
+        <ol>
+          <li>
+            Pravilo - negiranje njegovog postojanja. NHL i IIHF striktno odbijaju komentirati o bilo kakvome "kodu", budući da bi to zahtjevalo priznanje da sport kojim upravljaju, 
+            nije uvijek potpuno u njihovoj kontroli. Naime, igrači često provode pravila igre jednako kao i suci. </li>
+          <li>
+            Pravilo - u slučaju da suci ne propišu prekršaj ili ga ne primjete, protivnički igrači će reagirati, prije ili kasnije.
+          </li>
+          <li>
+            Pravilo - Ciljanje "Star" igrača se gleda kao nepošten čin. Postoji nepropisan dogovor da se tijekom utakmice ne cilja fizički napasti igrače koji zabijaju golove. Odnosno : "Ako ne dirate naše 
+            "Star" igrače, nećemo ni mi vaše".
+          </li>
+          <li>
+            Pravilo - U slučaju da "Star" igrač prekrši pravilo 2, ignoriraj pravilo 3.
+          </li>
+          <li>
+            Pravilo - Iniciranje fizičkog sukoba dok protivnik ne gleda ili je na podu se također gleda kao nepošten i nečasan čin. Protivnički tim će reagirati po pravilu broj 2.
+          </li>
+          <li>
+            Pravilo - Fizički napad nije pošten ako je protivnik slabiji ili fizički manji, pogotovo ako je taj igrač vješt u igri i neborac. Nepropisano pravilo govori kako je prihvatljivo napasti nekoga svoje veličine, ili večeg i jačeg.
+          </li>
+          <li>
+            Pravilo - Verbalni ili fizički dogovor prije sukoba. Pri iniciranju sukoba, oba igrača se moraju verbalno ili fizički složiti na sukob, u slučaju ne poštivanja ovog pravila, igrači će reagirati po pravilu
+            broj 2. Skidanje rukavica, bacanje palice ili u nekim slučajevima skidanje kacige su fizički indikatori iniciranja sukoba.
+          </li>
+          <li>
+            Pravilo - U slučaju izazova na sukob, ne prihvaćanje izazova (pogotovo ako je igrač napravio prekršaj) je neprihvatljivo. Prijateljska kao i protivnička momčad ovakav čin neće podržavati.
+          </li>
+          <li>
+            Pravilo - Planiranje sukoba je prihvatljivo, pogotovo ako se radi o verbalnom iniciranju. U ovom slučaju, oba igrača skidaju rukavice i kacige te se na ovo gleda kao izraz poštovanja.
+          </li>
+          <li>
+            Pravilo - Udaranje i nastavljanje sukoba ako je jedan od igrača pao na pod je neprihvatljivo.
+          </li>
+          <li>
+            Pravilo - Sukob sa vratarom je prihvatljiv samo ako su oba igrača vratari ili ako je sukob pokrenuo vratar.
+          </li>
+          <li>
+            Pravilo - Tuče su dozvoljene. U slučaju da 2 igrača započnu fizički sukob, dozvoljeno je započeti sukob s drugim igračem koji možda nije ni umiješan u prvobitni sukob. Ovo pravilo postoji kako 
+            bi igrači preventirali druge igrače od miješanja u sukob ili kao preventivna mjera eleminacije tj. kako bi se protivnički igrač (kao i igrač koji je započeo sukob) poslao na kaznenu klupu.
+          </li>
+          <li>
+            Pravilo - Postoje tzv. "štetočine" koje namjerno iniciraju sukobe ili krše pravila, te pri iniciranju sukoba se povuku. Cilj im je inicirati sukob i osigurati da protivnički igrač završi na kaznenoj klupi.
+          </li>
+          <li>
+            Zlatno Pravilo - Svaki igrač je zadužen braniti svoju momčad, neovisno o tome jeli to njegova zadaća ili ne (U slučaju "Star" igrača, vratara i sl.).
+          </li>
+        </ol>
+        <br>
+      </p>
+
+      <div class="auto-resizable-iframe">
+        <div>
+          <iframe width="100%" 
+          src="https://www.youtube.com/embed/3gq5_lcFg7M?autoplay=1&mute=1">
+          </iframe>
+        </div>
+      </div>
+
+      <br>
+     
+      
+    </div>
+    <div class="col-sm-2 " id="sideinfo">
+      
+    </div>
+  </div>
+</div>
+<hr>
+</body>
+<footer>
+    <div class="container-fluid text-center" style="background-color: gainsboro;">
+      <p style="margin-top: 25px;margin-bottom: 25px;">
+        Web stranica je izrađena za vrijeme pohađanja 
+        Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku u sklopu kolegija 
+        Multimedijska tehnika i poveznice na web stranicu fakulteta te na kolegij Multimedijska 
+        tehnika
+      </p>
+    </div>
+</footer>
+</html>
